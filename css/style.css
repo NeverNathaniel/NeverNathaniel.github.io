@@ -21,7 +21,7 @@
   --text: #c2b49a;
   --text-dim: #4a3f32;
   --accent: #6b2f7a;
-  --font: 'Courier Prime', 'Courier New', monospace;
+  --font: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
 html, body {
@@ -41,7 +41,7 @@ body::before {
 
 body {
   font-family: var(--font);
-  font-weight: 400;
+  font-weight: 300;
   background: var(--bg);
   color: var(--text);
   line-height: 1.75;
