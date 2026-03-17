@@ -1,1 +1,159 @@
 /* portfolio styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c1: #006466;
+  --c2: #065a60;
+  --c3: #0b525b;
+  --c4: #144552;
+  --c5: #1b3a4b;
+  --c6: #212f45;
+  --c7: #272640;
+  --c8: #312244;
+  --c9: #3e1f47;
+  --c10: #4d194d;
+  --text: #d6e4e5;
+  --text-dim: #7a9ea0;
+  --accent: #006466;
+  --font: 'Courier Prime', 'Courier New', monospace;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  background: linear-gradient(160deg,
+    var(--c1) 0%,
+    var(--c4) 20%,
+    var(--c6) 40%,
+    var(--c8) 65%,
+    var(--c10) 100%
+  );
+  background-attachment: fixed;
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+/* NAV */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+.site-name a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: var(--text-dim);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--c1);
+}
+
+/* MAIN */
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8rem 2rem 4rem;
+}
+
+h1#hero {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  min-height: 3.5rem;
+  letter-spacing: -0.01em;
+}
+
+/* Cursor blink from typewrite.js */
+.blinkingCursor {
+  color: var(--c1);
+  font-weight: 400;
+}
+
+/* CONTENT */
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--c1);
+  margin: 2.5rem 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+ul.content-list {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+ul.content-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: var(--text);
+}
+
+ul.content-list li::before {
+  content: '> ';
+  color: var(--c1);
+}
+
+ul.content-list li a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+ul.content-list li a:hover {
+  color: var(--c1);
+}
+
+/* FOOTER */
+
+footer {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
