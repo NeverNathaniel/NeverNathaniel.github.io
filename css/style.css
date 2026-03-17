@@ -19,8 +19,8 @@
   --c10: #4d194d;
   --bg: #090b0f;
   --text: #c8d8da;
-  --text-dim: #3d5a5c;
-  --accent: #006466;
+  --text-dim: #4a3558;
+  --accent: #6b2f7a;
   --font: 'Courier Prime', 'Courier New', monospace;
 }
 
@@ -60,7 +60,7 @@ nav {
   align-items: center;
   padding: 1.25rem 2rem;
   background: rgba(9, 11, 15, 0.92);
-  border-bottom: 1px solid rgba(0, 100, 102, 0.15);
+  border-bottom: 1px solid rgba(107, 47, 122, 0.2);
   z-index: 100;
 }
 
@@ -138,7 +138,7 @@ ul.content-list {
 
 ul.content-list li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(0, 100, 102, 0.12);
+  border-bottom: 1px solid rgba(107, 47, 122, 0.15);
   color: var(--text);
   font-weight: 400;
 }
