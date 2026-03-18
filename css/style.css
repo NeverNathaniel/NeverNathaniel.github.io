@@ -158,6 +158,34 @@ ul.content-list li a:hover {
   color: var(--accent);
 }
 
+/* DIAGRAMS */
+
+.diagram-block {
+  margin-bottom: 2rem;
+}
+
+.diagram-label {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+
+.diagram-label::before {
+  content: '> ';
+  color: var(--accent);
+}
+
+.diagram-img {
+  max-width: 100%;
+  border: 1px solid rgba(107, 47, 122, 0.2);
+  display: block;
+  cursor: zoom-in;
+}
+
+.diagram-img:hover {
+  border-color: var(--accent);
+}
+
 /* FOOTER */
 
 footer {
