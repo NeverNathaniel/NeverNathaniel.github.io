@@ -11,6 +11,7 @@
 <body>
   <nav>
     <span class="site-name"><a href="index.html">nathanSol</a></span>
+    <button class="nav-toggle" aria-label="toggle navigation" aria-expanded="false">☰</button>
     <ul>
       <li><a href="useful.html" class="active">collected</a></li>
       <li><a href="made.html">built</a></li>
@@ -19,14 +20,47 @@
   </nav>
 
   <main>
+    <h2>articles</h2>
+    <ul class="content-list">
+      <li><a href="https://andrewstaylor.com/2025/08/20/getting-started-with-intune-some-things-to-watch/" target="_blank" rel="noopener">getting started with intune: some things to watch</a></li>
+      <li><a href="https://thedeploymentguy.co.uk/windows-autopilot-2025/" target="_blank" rel="noopener">windows autopilot 2025</a></li>
+      <li><a href="https://www.chanceofsecurity.com/post/securing-microsoft-business-premium-part-01-laying-the-foundation" target="_blank" rel="noopener">securing microsoft business premium pt. 01: laying the foundation</a></li>
+      <li><a href="https://call4cloud.nl/intune-device-enrollment-errors-mdm-enrollment/" target="_blank" rel="noopener">intune device enrollment errors: mdm enrollment</a></li>
+    </ul>
+
+    <h2>blogs</h2>
+    <ul class="content-list">
+      <li><a href="https://andrewstaylor.com/" target="_blank" rel="noopener">andrew taylor</a></li>
+      <li><a href="https://patchmypc.com/blog/" target="_blank" rel="noopener">patch my pc</a></li>
+      <li><a href="https://call4cloud.nl/" target="_blank" rel="noopener">call4cloud</a></li>
+      <li><a href="https://thedeploymentguy.co.uk/" target="_blank" rel="noopener">the deployment guy</a></li>
+      <li><a href="https://petervanderwoude.nl/" target="_blank" rel="noopener">peter van der woude</a></li>
+      <li><a href="https://intunestuff.com/" target="_blank" rel="noopener">intune stuff</a></li>
+      <li><a href="https://techcommunity.microsoft.com/category/microsoftintune/blog/microsoftintuneblog" target="_blank" rel="noopener">microsoft intune blog</a></li>
+      <li><a href="https://lazyadmin.nl/" target="_blank" rel="noopener">lazy admin</a></li>
+    </ul>
+
     <h2>tools</h2>
     <ul class="content-list">
-      <li>coming soon</li>
+      <li><a href="https://github.com/KelvinTegelaar/CIPP" target="_blank" rel="noopener">cipp</a></li>
+      <li><a href="https://github.com/Micke-K/IntuneManagement" target="_blank" rel="noopener">intune management</a></li>
+      <li><a href="https://www.awesomeintune.com/" target="_blank" rel="noopener">awesome intune</a></li>
+      <li><a href="https://github.com/rbalsleyMSFT/FFU" target="_blank" rel="noopener">ffu</a></li>
+      <li><a href="https://psappdeploytoolkit.com/" target="_blank" rel="noopener">psappdeploytoolkit</a></li>
+      <li><a href="https://standards.cipp.app/" target="_blank" rel="noopener">cipp standards</a></li>
+      <li><a href="https://github.com/SkipToTheEndpoint/OpenIntuneBaseline" target="_blank" rel="noopener">open intune baseline</a></li>
+      <li><a href="https://github.com/andrew-s-taylor/WindowsAutopilotInfo" target="_blank" rel="noopener">windows autopilot info</a></li>
+      <li><a href="https://github.com/merill/graphxray" target="_blank" rel="noopener">graph x-ray</a></li>
+      <li><a href="https://github.com/ThomasKur/M365Documentation" target="_blank" rel="noopener">m365 documentation</a></li>
+      <li><a href="https://github.com/cisagov/ScubaGear" target="_blank" rel="noopener">scuba gear</a></li>
     </ul>
-    
-    <h2>reading</h2>
+
+    <h2>scripts</h2>
     <ul class="content-list">
-      <li>coming soon</li>
+      <li><a href="https://github.com/admindroid-community/powershell-scripts" target="_blank" rel="noopener">admindroid powershell scripts</a></li>
+      <li><a href="https://www.ninjaone.com/script-hub/" target="_blank" rel="noopener">ninjaone script hub</a></li>
+      <li><a href="https://pnp.github.io/script-samples/" target="_blank" rel="noopener">pnp script samples</a></li>
+      <li><a href="https://github.com/gwblok/garytown" target="_blank" rel="noopener">garytown scripts</a></li>
     </ul>
 
     <h2>reference diagrams</h2>
@@ -44,6 +78,7 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/typewrite.js"></script>
+  <script src="js/nav.js"></script>
   <script>
     $(document).ready(function() {
       $('#hero').typewrite({
