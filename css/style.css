@@ -18,9 +18,9 @@
   --c9: #3e1f47;
   --c10: #4d194d;
   --bg: #090b0f;
-  --text: #c2b49a;
-  --text-dim: #4a3f32;
-  --accent: #6b2f7a;
+  --text: #d8ccb4;
+  --text-dim: #9a8a70;
+  --accent: #b06ac9;
   --font: 'IBM Plex Mono', 'Courier New', monospace;
 }
 
@@ -60,7 +60,7 @@ nav {
   align-items: center;
   padding: 1.25rem 2rem;
   background: rgba(9, 11, 15, 0.92);
-  border-bottom: 1px solid rgba(107, 47, 122, 0.2);
+  border-bottom: 1px solid rgba(176, 106, 201, 0.3);
   z-index: 100;
 }
 
@@ -131,6 +131,16 @@ p {
   font-weight: 400;
 }
 
+p a {
+  color: var(--accent);
+  text-decoration-color: rgba(176, 106, 201, 0.5);
+  transition: color 0.15s;
+}
+
+p a:hover {
+  color: var(--text);
+}
+
 ul.content-list {
   list-style: none;
   margin-bottom: 2rem;
@@ -138,7 +148,7 @@ ul.content-list {
 
 ul.content-list li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(107, 47, 122, 0.15);
+  border-bottom: 1px solid rgba(176, 106, 201, 0.25);
   color: var(--text);
   font-weight: 400;
 }
@@ -177,7 +187,7 @@ ul.content-list li a:hover {
 
 .diagram-img {
   max-width: 100%;
-  border: 1px solid rgba(107, 47, 122, 0.2);
+  border: 1px solid rgba(176, 106, 201, 0.3);
   display: block;
   cursor: zoom-in;
 }
@@ -215,7 +225,7 @@ ul.content-list li a:hover {
     gap: 0;
     padding: 0.5rem 2rem 1.25rem;
     background: rgba(9, 11, 15, 0.97);
-    border-bottom: 1px solid rgba(107, 47, 122, 0.2);
+    border-bottom: 1px solid rgba(176, 106, 201, 0.3);
   }
 
   nav ul.open {
@@ -225,7 +235,7 @@ ul.content-list li a:hover {
   nav ul li {
     width: 100%;
     padding: 0.6rem 0;
-    border-bottom: 1px solid rgba(107, 47, 122, 0.1);
+    border-bottom: 1px solid rgba(176, 106, 201, 0.2);
   }
 
   nav ul li:last-child {
