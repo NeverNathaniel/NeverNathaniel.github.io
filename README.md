@@ -16,11 +16,3 @@ Personal site for Nathan Sol. A collection of things built, tools collected, and
 Plain HTML and CSS, no build step. Uses [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) via Google Fonts, jQuery 3.7.1, and a small custom typewriter plugin (`js/typewrite.js`).
 
 Deployed via GitHub Pages from the `main` branch.
-
-## Local dev
-
-```sh
-npx serve .
-```
-
-Then open `http://localhost:3000`.
