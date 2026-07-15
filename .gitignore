@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor / OS artifacts
+.env
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Local Claude Code settings (keep launch.json tracked, ignore local overrides)
+.claude/settings.local.json
